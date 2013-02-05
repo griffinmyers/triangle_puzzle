@@ -44,7 +44,7 @@ Generated solutions will look something like this:
     
 Line 1 means "move peg 3 to peg 0 over peg 1"
 
-Curiosity Satisfied
+curiosity satisfied
 ===================
 
     There are 29760 solutions when the 0 peg is open first
