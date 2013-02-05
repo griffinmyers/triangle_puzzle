@@ -17,7 +17,7 @@ class Board
     @activenodes.delete_if { |n| n == over }
     @activenodes.push(to)
     @history.push("from: #{from}, to: #{to}, over: #{over}")
-    remaining -= 1
+    @remaining -= 1
   end
 
   def rewind(from, to, over)
@@ -28,15 +28,7 @@ class Board
     @activenodes.push(from)
     @activenodes.push(over)
     @history.pop
-    remaining += 1
-  end
-
-  def nodes
-    @nodes
-  end
-
-  def remaining
-    @remaining
+    @remaining += 1
   end
 
   def moves
@@ -46,6 +38,14 @@ class Board
       m += moves if moves.any?
     end
     m
+  end
+
+  def nodes
+    @nodes
+  end
+
+  def remaining
+    @remaining
   end
 
   def history
