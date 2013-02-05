@@ -1,10 +1,16 @@
 triangle puzzle
 ===============
 
-This is an awful brute-force solution to the triangle-puzzle thing they have 
-at Cracker Barrel for you to play with while you wait for your food. 
+This is an awful brute-force solution to the triangle-puzzle thing where
+you have pegs that jump other pegs. 
 
 It shouldn't be used by anyone for any reason.
+
+This code shouldn't be looked at by anyone for any reason. 
+
+If you must, though:
+
+    ruby game.rb
 
 The board is set up with nodes like this:
 
