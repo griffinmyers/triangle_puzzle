@@ -13,12 +13,13 @@ def play(board)
     end
   else
     if board.remaining == 1
-      puts " ## begin solution ##"
+      puts "## begin solution ##"
       puts board.history
-      puts " ## end solution ##"
+      puts "## end solution ##"
     end
   end
 
 end
 
 play(board)
+
