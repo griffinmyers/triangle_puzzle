@@ -23,9 +23,9 @@ class Node
     14 => [[9, 5], [13, 12]]
   }
 
-  def initialize(number, isOccupied, board)
+  def initialize(number, is_occupied, board)
     @number = number
-    @isOccupied = isOccupied
+    @is_occupied = is_occupied
     @board = board
   end
 
@@ -34,7 +34,7 @@ class Node
     MOVE_MAP[@number].each do |m|
       # m[0] is the node being jumped
       # m[1] is the node being jumped to
-      if nodes[m[0]].isOccupied && !nodes[m[1]].isOccupied
+      if nodes[m[0]].is_occupied && !nodes[m[1]].is_occupied
         move_list.push([@number, m[1], m[0]])
         # return from, to, over
       end
@@ -46,8 +46,8 @@ class Node
     @isOccupied
   end
 
-  def isOccupied=(thing)
-    @isOccupied = thing
+  def is_occupied=(thing)
+    @is_occupied = thing
   end
 
   private
