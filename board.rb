@@ -10,9 +10,9 @@ class Board
   end
 
   def move(from, to, over)
-    @nodes[from].isOccupied = false
-    @nodes[to].isOccupied = true
-    @nodes[over].isOccupied = false
+    @nodes[from].is_occupied = false
+    @nodes[to].is_occupied = true
+    @nodes[over].is_occupied = false
     @activenodes.delete_if { |n| n == from }
     @activenodes.delete_if { |n| n == over }
     @activenodes.push(to)
@@ -21,9 +21,9 @@ class Board
   end
 
   def rewind(from, to, over)
-    @nodes[from].isOccupied = true
-    @nodes[to].isOccupied = false
-    @nodes[over].isOccupied = true
+    @nodes[from].is_occupied = true
+    @nodes[to].is_occupied = false
+    @nodes[over].is_occupied = true
     @activenodes.delete_if { |n| n == to }
     @activenodes.push(from)
     @activenodes.push(over)
