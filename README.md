@@ -20,6 +20,12 @@ The board is set up with nodes like this:
       6   7   8   9
     10  11  12  13  14  
     
+
+ruby vs c++
+===========
+
+I ported this over to C++ as well, check that branch if you want to see the code. With my ostensibly _okay_ ruby code and _poor_ C++ code I saw roughly an order of magnitude difference in speed. 
+    
     
 solutions
 =========
