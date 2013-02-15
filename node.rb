@@ -42,8 +42,8 @@ class Node
     move_list
   end
 
-  def isOccupied
-    @isOccupied
+  def is_occupied
+    @is_occupied
   end
 
   def is_occupied=(thing)
