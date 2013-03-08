@@ -14,8 +14,8 @@ If you must, though:
 
     python3 python/game.py
 
-    g++ -Wall -I . c++/main.cpp c++/board.cpp -o c++/game.tsk
-    c++/game.tsk
+    cd c++; g++ -Wall -I . main.cpp board.cpp -o game.tsk
+    ./game.tsk
 
 The board is set up with nodes like this:
 
