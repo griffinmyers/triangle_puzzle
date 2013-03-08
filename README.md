@@ -79,7 +79,7 @@ Ruby 2.0.0
     There are 85258 solutions for opening peg: 5 (took 48.774407 seconds)
     There are 85258 solutions for opening peg: 12 (took 51.382318 seconds)
 
-Python 3.0
+Python 3.3
 ----------
 
     There are 29760 solutions for opening peg: 0 (took 35.708173990249634 seconds)
